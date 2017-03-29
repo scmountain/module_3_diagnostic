@@ -2,7 +2,9 @@ class Search
   attr_reader :zip_code
 
   def initialize(params)
-
+    byebug
+    why only longitude?
+    
   end
 
   def self.all(zip_code)
