@@ -4,13 +4,13 @@ RSpec.describe "when a user searches" do
   it "when i visit root'/''" do
     visit root_path
     expect(page).to have_content("AltFuelFinder")
-    fill_in('Zip Code', :with => '80203')
+    fill_in('q', :with => '80203')
     click_on "Locate"
 
     expect(current_path).to eq(search_path)
   end
 
-  xit "when i am on the search results page" do
+  it "when i am on the search results page" do
     visit search_path
 
     expect(page).to_have

@@ -1,8 +1,5 @@
 class SearchController < ApplicationController
   def index
-  end
-
-  def new
-    @search = Search.all
+    @search = Search.all(params["q"])
   end
 end

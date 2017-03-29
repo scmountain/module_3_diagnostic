@@ -13,8 +13,9 @@ gem 'figaro'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
+  gem 'pry'
   gem 'vcr'
-  gem 'webmock' 
+  gem 'webmock'
   gem 'launchy'
   gem 'capybara'
   gem 'rspec-rails'
